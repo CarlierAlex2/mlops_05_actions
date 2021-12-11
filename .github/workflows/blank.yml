@@ -39,7 +39,7 @@ jobs:
       - name: Build and run Dockerfile
         run: |
           docker build . -t hello-world-nginx:v1
-          docker run -d -p 4001:80 hello-world-nginx:v1
+          docker run -d -p 8004:80 hello-world-nginx:v1
 
       # Test Docker container: check if can get HTML page
       - name: Test Docker container
